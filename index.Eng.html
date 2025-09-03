@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>E-Learning Platform</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top shadow ">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold fs-4" href="#">
+                <i class="bi bi-mortarboard-fill me-2"></i> Learn Platform
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">
+                            <i class="bi bi-house-door me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#courses">
+                            <i class="bi bi-book me-1"></i> Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#events">
+                            <i class="bi bi-calendar-event me-1"></i> Upcoming Events
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#teachers">
+                            <i class="bi bi-people me-1"></i> Teachers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#blog">
+                            <i class="bi bi-pencil-square me-1"></i> Latest Articles
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex gap-3 ">
+                    <a href="login.Eng.html" class="btn btn-warning text-white fw-bold w-50 h-50">Login</a>
+                    <a href="Create_Account.Eng.html" class="btn btn-outline-light w-100 h-100">Create_Account</a>
+                    <a href="index.html" class="btn btn-outline-warning w-100 h-100 ">
+                        <i class="bi bi-translate"></i> Ar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="text-center text-lg-start">
+                        <h1 class="display-4 fw-bold mb-4 text-warning">Your Bright Future is Our Mission</h1>
+                        <p class="lead mb-4 fs-5">Join our educational platform and discover a world of knowledge and professional development with the best trainers and experts.</p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                            <a href="Create_Account.Eng.html" class="btn btn-warning btn-lg px-4 py-3 fw-bold">
+                                <i class="bi bi-rocket-takeoff me-2"></i> Get Started
+                            </a>
+                            <a href="#courses" class="btn btn-outline-light  px-4 py-3">
+                                <i class="bi bi-play-circle me-2"></i> Explore Courses
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="images/students.png" alt="Students studying" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Features Section -->
+      <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-award fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Certified Certificates</h5>
+                        <p class="text-muted">Obtain certified certificates from top universities and educational institutions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-clock fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Learn Anytime</h5>
+                        <p class="text-muted">Study according to your schedule with 24/7 access to content</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">Expert Trainers</h5>
+                        <p class="text-muted">Learn from the best trainers and experts in various fields</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Courses</h2>
+                <p class="lead text-muted">Choose from a wide range of specialized courses</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/teacher.jpg" alt="Programming" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Technology</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <small class="text-muted ms-1">(4.5)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">Programming & Web Development</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn the basics of programming and web development from scratch with top specialized instructors in this field.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$99</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$149</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal1">
+                                    <i class="bi bi-eye me-1"></i>Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/graduation.jpg" alt="Marketing" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Business</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <small class="text-muted ms-1">(4.2)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">Digital Marketing</h5>
+                            <p class="card-text text-muted flex-grow-1">Discover modern and effective marketing strategies in the digital era and learn how to build successful campaigns.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$79</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$119</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal2">
+                                    <i class="bi bi-eye me-1"></i>Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/work-program.jpg" alt="Business Management" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Leadership</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted ms-1">(5.0)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">Business Management & Leadership</h5>
+                            <p class="card-text text-muted flex-grow-1">Enhance your skills in business management and leadership, and learn how to build successful teams and manage projects effectively.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$129</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$179</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal3">
+                                    <i class="bi bi-eye me-1"></i>Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Upcoming Events</h2>
+                <p class="lead text-muted">Don’t miss the chance to join the latest educational events</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/learn.jpg" alt="Programming Workshop" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Workshop</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>February 15, 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">Advanced Programming Workshop</h5>
+                            <p class="card-text text-muted">An intensive workshop to learn the basics of advanced programming and the latest technologies in development.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                                    <small class="text-muted">Online</small>
+                                </div>
+                                <a class="btn btn-outline-primary" href="Create_Account.html">
+                                    <i class="bi bi-calendar-plus me-1"></i>Register Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/classroom.jpg" alt="Education Conference" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Conference</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>February 20, 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">Digital Education Conference</h5>
+                            <p class="card-text text-muted">A comprehensive conference on the future of e-learning and the latest trends in educational technology.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                                    <small class="text-muted">Sana'a, Yemen</small>
+                                </div>
+                                <a class="btn btn-outline-primary" href="Create_Account.html">
+                                    <i class="bi bi-calendar-plus me-1"></i>Register Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Our Teachers</h2>
+                <p class="lead text-muted">Meet a group of the best teachers and experts</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/images_pro (1).jpg" class="rounded-circle mb-3 shadow" width="120" height="120" alt="Ahmed Mohammed" style="object-fit: cover;">
+                            <h5 class="fw-bold">Ahmed Mohammed</h5>
+                            <p class="text-primary fw-semibold">Programming & Web Development Instructor</p>
+                            <p class="text-muted small">Expert in web and app development with more than 10 years of experience.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/images.jpg" class="rounded-circle mb-3 shadow" width="120" height="120" alt="Fatima Ali" style="object-fit: cover;">
+                            <h5 class="fw-bold">Fatima Ali</h5>
+                            <p class="text-primary fw-semibold">Digital Marketing Instructor</p>
+                            <p class="text-muted small">Expert in digital marketing and social media with a proven track record of success.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/lovepik-business-man-holding-a-laptop.png" class="rounded-circle mb-3 shadow" width="120" height="120" alt="Mohammed Hassan" style="object-fit: cover;">
+                            <h5 class="fw-bold">Mohammed Hassan</h5>
+                            <p class="text-primary fw-semibold">Business & Leadership Instructor</p>
+                            <p class="text-muted small">Certified management consultant and leadership trainer with extensive experience in business management.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-primary">Latest Articles</h2>
+            <p class="lead text-muted">Read the latest articles and educational tips</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="images/students.png" class="card-img-top" alt="Study Tips" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-info">Tips</span>
+                            <small class="text-muted">
+                                <i class="bi bi-calendar3 me-1"></i>January 10, 2025
+                            </small>
+                        </div>
+                        <h5 class="card-title fw-bold">Effective Study Tips</h5>
+                        <p class="card-text text-muted flex-grow-1">Discover the best methods and strategies for effective studying and achieving academic and professional success.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="images/images.jpg" class="rounded-circle me-2" width="30" height="30" alt="Author" style="object-fit: cover;">
+                                <small class="text-muted">Fatima Ali</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" style="width:150px;">
+                                <i class="bi bi-arrow-left me-1"></i>Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="images/classroom.jpg" class="card-img-top" alt="Future of Education" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-warning">Tech</span>
+                            <small class="text-muted">
+                                <i class="bi bi-calendar3 me-1"></i>January 8, 2025
+                            </small>
+                        </div>
+                        <h5 class="card-title fw-bold">Future of E-Learning</h5>
+                        <p class="card-text text-muted flex-grow-1">A comprehensive look at modern developments in digital education and emerging technologies.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="images/images_pro (1).jpg" class="rounded-circle me-2" width="30" height="30" alt="Author" style="object-fit: cover;">
+                                <small class="text-muted">Ahmed Mohammed</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" style="width:150px;">
+                                <i class="bi bi-arrow-left me-1"></i>Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="images/work-pro.jpg" class="card-img-top" alt="Choosing Major" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-success">Guidance</span>
+                            <small class="text-muted">
+                                <i class="bi bi-calendar3 me-1"></i>January 5, 2025
+                            </small>
+                        </div>
+                        <h5 class="card-title fw-bold">How to Choose the Right Major</h5>
+                        <p class="card-text text-muted flex-grow-1">A comprehensive guide for selecting the right academic or career major for your personality and goals.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="images/lovepik-business-man-holding-a-laptop.png" class="rounded-circle me-2" width="30" height="30" alt="Author" style="object-fit: cover;">
+                                <small class="text-muted">Mohammed Hassan</small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary" style="width:150px;">
+                                <i class="bi bi-arrow-left me-1"></i>Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h3 class="fw-bold mb-3">Subscribe to Our Newsletter</h3>
+                <p class="mb-0">Get the latest news and special offers directly to your inbox</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-2">
+                    <div class="col-8">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-warning btn-lg w-100 fw-bold">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <h5 class="fw-bold mb-3">
+                    <i class="bi bi-mortarboard-fill text-warning me-2"></i>E-Learning Platform
+                </h5>
+                <p class="text-light">We offer the best courses and training programs to develop your professional and academic skills with top instructors and experts.</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-outline-success btn-sm">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-info btn-sm">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-danger btn-sm">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">Courses</a></li>
+                    <li class="mb-2"><a href="#teachers" class="text-light text-decoration-none">Teachers</a></li>
+                    <li class="mb-2"><a href="#blog" class="text-light text-decoration-none">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Courses</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">Programming & Web Development</a></li>
+                    <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">Digital Marketing</a></li>
+                    <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">Business Management</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Contact Us</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="bi bi-geo-alt text-warning me-2"></i>Yemen - Sana'a
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-telephone text-warning me-2"></i>+967 770955006
+                    </li>
+                    <li class="mb-2">
+                        <i class="bi bi-envelope text-warning me-2"></i>abdullah@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="my-4 border-secondary">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0 text-light">&copy; 2025 E-Learning Platform. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light text-decoration-none">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Course Modals -->
+<div class="modal fade" id="courseModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-primary">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h5 class="modal-title fw-bold me-4">Programming & Web Development</h5>
+            </div>
+            <div class="modal-body">
+                <img src="images/teacher.jpg" class="img-fluid rounded mb-3" alt="Programming">
+                <h6 class="fw-bold">Course Description:</h6>
+                <p>Learn the fundamentals of programming and web development from scratch with top specialized instructors. You will learn HTML, CSS, JavaScript, and the latest web development technologies.</p>
+                
+                <h6 class="fw-bold">What You'll Learn:</h6>
+                <ul>
+                    <li>Basics of HTML & CSS</li>
+                    <li>Programming with JavaScript</li>
+                    <li>Interactive Web Development</li>
+                    <li>Using the latest tools and technologies</li>
+                </ul>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Duration:</strong> 8 Weeks
+                    </div>
+                    <div class="col-6">
+                        <strong>Level:</strong> Beginner
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="Create_Account.html">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="courseModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-primary">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h5 class="modal-title fw-bold me-4">Digital Marketing</h5>
+            </div>
+            <div class="modal-body">
+                <img src="images/graduation.jpg" class="img-fluid rounded mb-3" alt="Marketing">
+                <h6 class="fw-bold">Course Description:</h6>
+                <p>Discover modern and effective marketing strategies in the digital age. Learn how to build successful marketing campaigns and increase sales.</p>
+                
+                <h6 class="fw-bold">What You'll Learn:</h6>
+                <ul>
+                    <li>Basics of Digital Marketing</li>
+                    <li>Social Media Management</li>
+                    <li>Paid Advertising</li>
+                    <li>Data Analysis & Results</li>
+                </ul>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Duration:</strong> 6 Weeks
+                    </div>
+                    <div class="col-6">
+                        <strong>Level:</strong> Intermediate
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="Create_Account.html">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="courseModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-primary">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <h5 class="modal-title fw-bold me-4">Business Management & Leadership</h5>
+            </div>
+            <div class="modal-body">
+                <img src="images/work-program.jpg" class="img-fluid rounded mb-3" alt="Business Management">
+                <h6 class="fw-bold">Course Description:</h6>
+                <p>Develop your skills in business management and leadership. Learn how to build successful teams and manage projects efficiently.</p>
+                
+                <h6 class="fw-bold">What You'll Learn:</h6>
+                <ul>
+                    <li>Basics of Business Management</li>
+                    <li>Effective Leadership Skills</li>
+                    <li>Team & Project Management</li>
+                    <li>Strategic Decision Making</li>
+                </ul>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <strong>Duration:</strong> 10 Weeks
+                    </div>
+                    <div class="col-6">
+                        <strong>Level:</strong> Advanced
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="Create_Account.html">Enroll Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

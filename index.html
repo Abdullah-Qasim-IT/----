@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>منصة التعليم الإلكتروني</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top shadow  ">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold fs-4" href="#">
+                <i class="bi bi-mortarboard-fill me-2"></i> منصة تعلم
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-inline-flex gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home">
+                            <i class="bi bi-house-door me-1"></i> الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#courses">
+                            <i class="bi bi-book me-1"></i> الدورات التعليمية  
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#events">
+                            <i class="bi bi-calendar-event me-1"></i> الأحداث القادمة
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#teachers">
+                            <i class="bi bi-people me-1"></i> المدرسين
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#blog">
+                            <i class="bi bi-pencil-square me-1"></i> أحدث المقالات
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex gap-3 ">
+                    <a href="login.html" class="btn btn-warning text-white fw-bold w-50 h-50 ">تسجيل_الدخول</a>
+                    <a href="Create_Account.html" class="btn btn-outline-light w-100 h-100">إنشاء_حساب</a>
+                    <a href="index.Eng.html" class="btn btn-outline-warning ">
+                    <i class="bi bi-translate"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="text-center text-lg-end">
+                        <h1 class="display-4 fw-bold mb-4 text-warning">مستقبلك المشرق هو مهمتنا</h1>
+                        <p class="lead mb-4 fs-5">انضم إلى منصتنا التعليمية واكتشف عالماً من المعرفة والتطوير المهني مع أفضل المدربين والخبراء</p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                            <a href="Create_Account.html" class="btn btn-warning btn-lg px-4 py-3 fw-bold">
+                                <i class="bi bi-rocket-takeoff me-2"></i> ابدأ الآن
+                            </a>
+                            <a href="#courses" class="btn btn-outline-light  px-4 py-3">
+                                <i class="bi bi-play-circle me-2"></i> استكشف الدورات
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="images/students.png" alt="طلاب يدرسون" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-award fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">شهادات معتمدة</h5>
+                        <p class="text-muted">احصل على شهادات معتمدة من أفضل الجامعات والمؤسسات التعليمية</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-clock fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">تعلم في أي وقت</h5>
+                        <p class="text-muted">ادرس وفقاً لجدولك الزمني مع إمكانية الوصول للمحتوى على مدار الساعة</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold">مدربين خبراء</h5>
+                        <p class="text-muted">تعلم من أفضل المدربين والخبراء في مختلف المجالات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">الدورات التعليمية</h2>
+                <p class="lead text-muted">اختر من بين مجموعة واسعة من الدورات المتخصصة</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/teacher.jpg" alt="البرمجة" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">تقنية</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <small class="text-muted ms-1">(4.5)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">البرمجة وتطوير المواقع</h5>
+                            <p class="card-text text-muted flex-grow-1">تعلم أساسيات البرمجة وتطوير المواقع من الصفر مع أفضل المدربين المتخصصين في هذا المجال</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$99</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$149</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal1">
+                                    <i class="bi bi-eye me-1"></i>التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/graduation.jpg" alt="التسويق" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">أعمال</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <small class="text-muted ms-1">(4.2)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">التسويق الرقمي</h5>
+                            <p class="card-text text-muted flex-grow-1">اكتشف استراتيجيات التسويق الحديثة والفعالة في العصر الرقمي وتعلم كيفية بناء حملات ناجحة</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$79</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$119</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal2">
+                                    <i class="bi bi-eye me-1"></i>التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="images/work-program.jpg" alt="إدارة الأعمال" class="card-img-top" style="height: 250px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">قيادة</span>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <small class="text-muted ms-1">(5.0)</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title fw-bold">إدارة الأعمال والقيادة</h5>
+                            <p class="card-text text-muted flex-grow-1">طور مهاراتك في إدارة الأعمال والقيادة وتعلم كيفية بناء فرق عمل ناجحة وإدارة المشاريع</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <span class="text-primary fw-bold fs-5">$129</span>
+                                    <small class="text-muted text-decoration-line-through ms-2">$179</small>
+                                </div>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal3">
+                                    <i class="bi bi-eye me-1"></i>التفاصيل
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">الأحداث القادمة</h2>
+                <p class="lead text-muted">لا تفوت الفرصة للمشاركة في أحدث الفعاليات التعليمية</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/learn.jpg" alt="ورشة البرمجة" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">ورشة عمل</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>15 فبراير 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">ورشة عمل البرمجة المتقدمة</h5>
+                            <p class="card-text text-muted">ورشة عمل مكثفة لتعلم أساسيات البرمجة المتقدمة وأحدث التقنيات في عالم التطوير</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                                    <small class="text-muted">أونلاين</small>
+                                </div>
+                                <a class="btn btn-outline-primary" href="Create_Account.html">
+                                    <i class="bi bi-calendar-plus me-1"></i>سجل الآن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/classroom.jpg" alt="مؤتمر التعليم" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">مؤتمر</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>20 فبراير 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">مؤتمر التعليم الرقمي</h5>
+                            <p class="card-text text-muted">مؤتمر شامل حول مستقبل التعليم الإلكتروني وأحدث الاتجاهات في التكنولوجيا التعليمية</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="bi bi-geo-alt text-primary me-1"></i>
+                                    <small class="text-muted">صنعاء، اليمن</small>
+                                </div>
+                                <a class="btn btn-outline-primary" href="Create_Account.html">
+                                    <i class="bi bi-calendar-plus me-1"></i>سجل الآن
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">فريق المدرسين</h2>
+                <p class="lead text-muted">تعرف على نخبة من أفضل المدرسين والخبراء</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/images_pro (1).jpg" class="rounded-circle mb-3 shadow" width="120" height="120" alt="أحمد محمد" style="object-fit: cover;">
+                            <h5 class="fw-bold">أحمد محمد</h5>
+                            <p class="text-primary fw-semibold">مدرس البرمجة وتطوير المواقع</p>
+                            <p class="text-muted small">خبير في تطوير المواقع والتطبيقات مع أكثر من 10 سنوات من الخبرة</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/images.jpg" class="rounded-circle mb-3 shadow" width="120" height="120" alt="فاطمة علي" style="object-fit: cover;">
+                            <h5 class="fw-bold">فاطمة علي</h5>
+                            <p class="text-primary fw-semibold">مدرسة التسويق الرقمي</p>
+                            <p class="text-muted small">خبيرة في التسويق الرقمي ووسائل التواصل الاجتماعي مع سجل حافل بالنجاحات</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="images/lovepik-business-man-holding-a-laptop.png" class="rounded-circle mb-3 shadow" width="120" height="120" alt="محمد حسن" style="object-fit: cover;">
+                            <h5 class="fw-bold">محمد حسن</h5>
+                            <p class="text-primary fw-semibold">مدرس إدارة الأعمال والقيادة</p>
+                            <p class="text-muted small">مستشار إداري ومدرب قيادة معتمد مع خبرة واسعة في إدارة الشركات</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-linkedin"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">أحدث المقالات</h2>
+                <p class="lead text-muted">اقرأ أحدث المقالات والنصائح التعليمية</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/students.png" class="card-img-top" alt="نصائح الدراسة" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info">نصائح</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>10 يناير 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">نصائح للدراسة الفعالة</h5>
+                            <p class="card-text text-muted flex-grow-1">اكتشف أفضل الطرق والاستراتيجيات للدراسة الفعالة وتحقيق النجاح الأكاديمي والمهني</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/images.jpg" class="rounded-circle me-2" width="30" height="30" alt="الكاتب" style="object-fit: cover;">
+                                    <small class="text-muted">فاطمة علي</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-arrow-left me-1"></i>اقرأ المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/classroom.jpg" class="card-img-top" alt="مستقبل التعليم" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">تقنية</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>8 يناير 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">مستقبل التعليم الإلكتروني</h5>
+                            <p class="card-text text-muted flex-grow-1">نظرة شاملة على التطورات الحديثة في مجال التعليم الرقمي والتقنيات الناشئة</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/images_pro (1).jpg" class="rounded-circle me-2" width="30" height="30" alt="الكاتب" style="object-fit: cover;">
+                                    <small class="text-muted">أحمد محمد</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-arrow-left me-1"></i>اقرأ المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="images/work-pro.jpg" class="card-img-top" alt="اختيار التخصص" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">إرشاد</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>5 يناير 2025
+                                </small>
+                            </div>
+                            <h5 class="card-title fw-bold">كيفية اختيار التخصص المناسب</h5>
+                            <p class="card-text text-muted flex-grow-1">دليل شامل لاختيار التخصص الجامعي أو المهني المناسب لشخصيتك وأهدافك</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/lovepik-business-man-holding-a-laptop.png" class="rounded-circle me-2" width="30" height="30" alt="الكاتب" style="object-fit: cover;">
+                                    <small class="text-muted">محمد حسن</small>
+                                </div>
+                                <a href="#" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-arrow-left me-1"></i>اقرأ المزيد
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold mb-3">اشترك في النشرة الإخبارية</h3>
+                    <p class="mb-0">احصل على أحدث الأخبار والعروض الخاصة مباشرة في بريدك الإلكتروني</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="أدخل بريدك الإلكتروني">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-warning btn-lg w-100 fw-bold">اشترك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-mortarboard-fill text-warning me-2"></i>منصة التعليم الإلكتروني
+                    </h5>
+                    <p class="text-light">نحن نقدم أفضل الدورات التعليمية والبرامج التدريبية لتطوير مهاراتك المهنية والأكاديمية مع أفضل المدربين والخبراء.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-success btn-sm">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">روابط سريعة</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">الدورات</a></li>
+                        <li class="mb-2"><a href="#teachers" class="text-light text-decoration-none">المدرسين</a></li>
+                        <li class="mb-2"><a href="#blog" class="text-light text-decoration-none">المقالات</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">الدورات</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">البرمجة وتطوير المواقع</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">التسويق الرقمي</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-light text-decoration-none">إدارة الأعمال</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">تواصل معنا</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt text-warning me-2"></i>
+                            اليمن -صنعاء
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone text-warning me-2"></i>
+                            +967 770955006
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope text-warning me-2"></i>
+                            abdullah@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2025 منصة التعليم الإلكتروني. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">سياسة الخصوصية</a>
+                    <a href="#" class="text-light text-decoration-none">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Course Modals -->
+    <div class="modal fade" id="courseModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-primary">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title fw-bold me-4">البرمجة وتطوير المواقع</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="images/teacher.jpg" class="img-fluid rounded mb-3" alt="البرمجة">
+                    <h6 class="fw-bold">وصف الدورة:</h6>
+                    <p>تعلم أساسيات البرمجة وتطوير المواقع من الصفر مع أفضل المدربين المتخصصين. ستتعلم HTML, CSS, JavaScript, وأحدث التقنيات في تطوير المواقع.</p>
+                    
+                    <h6 class="fw-bold">ما ستتعلمه:</h6>
+                    <ul>
+                        <li>أساسيات HTML و CSS</li>
+                        <li>البرمجة بـ JavaScript</li>
+                        <li>تطوير المواقع التفاعلية</li>
+                        <li>استخدام أحدث الأدوات والتقنيات</li>
+                    </ul>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>المدة:</strong> 8 أسابيع
+                        </div>
+                        <div class="col-6">
+                            <strong>المستوى:</strong> مبتدئ
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <a type="button" class="btn btn-primary" href="Create_Account.html">التسجيل في الدورة</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="courseModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-primary">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title fw-bold me-4">التسويق الرقمي</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="images/graduation.jpg" class="img-fluid rounded mb-3" alt="التسويق">
+                    <h6 class="fw-bold">وصف الدورة:</h6>
+                    <p>اكتشف استراتيجيات التسويق الحديثة والفعالة في العصر الرقمي. تعلم كيفية بناء حملات تسويقية ناجحة وزيادة المبيعات.</p>
+                    
+                    <h6 class="fw-bold">ما ستتعلمه:</h6>
+                    <ul>
+                        <li>أساسيات التسويق الرقمي</li>
+                        <li>إدارة وسائل التواصل الاجتماعي</li>
+                        <li>الإعلانات المدفوعة</li>
+                        <li>تحليل البيانات والنتائج</li>
+                    </ul>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>المدة:</strong> 6 أسابيع
+                        </div>
+                        <div class="col-6">
+                            <strong>المستوى:</strong> متوسط
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <a type="button" class="btn btn-primary" href="Create_Account.html">التسجيل في الدورة</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="courseModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-primary   ">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title fw-bold me-4">إدارة الأعمال والقيادة</h5>
+                </div>
+                <div class="modal-body">
+                    <img src="images/work-program.jpg" class="img-fluid rounded mb-3" alt="إدارة الأعمال">
+                    <h6 class="fw-bold">وصف الدورة:</h6>
+                    <p>طور مهاراتك في إدارة الأعمال والقيادة. تعلم كيفية بناء فرق عمل ناجحة وإدارة المشاريع بكفاءة عالية.</p>
+                    
+                    <h6 class="fw-bold">ما ستتعلمه:</h6>
+                    <ul>
+                        <li>أساسيات إدارة الأعمال</li>
+                        <li>مهارات القيادة الفعالة</li>
+                        <li>إدارة الفرق والمشاريع</li>
+                        <li>اتخاذ القرارات الاستراتيجية</li>
+                    </ul>
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <strong>المدة:</strong> 10 أسابيع
+                        </div>
+                        <div class="col-6">
+                            <strong>المستوى:</strong> متقدم
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                    <a type="button" class="btn btn-primary" href="Create_Account.html">التسجيل في الدورة</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
